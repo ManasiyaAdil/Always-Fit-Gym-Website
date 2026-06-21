@@ -1,0 +1,117 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #16213e);
+    color: white;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: #ff914d;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(45deg, #ff5733, #ff914d);
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 87, 51, 0.3);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #e04e2b, #ff6f42);
+    box-shadow: 0 10px 25px rgba(255, 87, 51, 0.5);
+}
+
+/* Info Box */
+#infoBox {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    backdrop-filter: blur(12px);
+}
+
+#infoBox h2 {
+    font-size: 24px;
+    color: #ff914d;
+}
+
+#infoBox p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Tips Section */
+.tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #ff914d;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Show Animation */
+.show {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+/* Hidden Class */
+.hidden {
+   display: none;
+}
